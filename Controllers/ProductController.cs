@@ -7,7 +7,7 @@ using test.Data;
 using test.Service;
 
 namespace test.Controllers {
-    [Route ("api/[controller]")]
+    [Route ("api/[controller]/[action]")]
     public class ProductController : Controller {
         private readonly IProductService productService;
         

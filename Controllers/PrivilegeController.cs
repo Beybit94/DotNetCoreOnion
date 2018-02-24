@@ -7,7 +7,7 @@ using test.Data;
 using test.Service;
 
 namespace test.Controllers {
-    [Route ("api/[controller]")]
+    [Route ("api/[controller]/[action]")]
     public class PrivilegeController : Controller {
         private readonly IPrivilegeService privService;
         

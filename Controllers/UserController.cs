@@ -7,7 +7,7 @@ using test.Data;
 using test.Service;
 
 namespace test.Controllers {
-    [Route ("api/[controller]")]
+    [Route ("api/[controller]/[action]")]
     public class UserController : Controller {
         private readonly IUserService userService;
 
@@ -17,14 +17,6 @@ namespace test.Controllers {
 
         [HttpGet]
         public IEnumerable<User> Get () {
-            // User user=new User{
-            //     name="admin",
-            //     login="admin",
-            //     pass="123456",
-            //     ModifiedDate=DateTime.Now
-            // };
-            // userService.InsertUser(user);
-
             return userService.GetUsers ();
         }
 
